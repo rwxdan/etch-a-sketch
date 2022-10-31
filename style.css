@@ -14,6 +14,7 @@
 html,
 body {
 	height: 100%;
+	background-color: var(--bg-clr);
 }
 
 *,
@@ -26,4 +27,60 @@ body {
 	margin: 0;
 	padding: 0;
 	font-style: inherit;
+}
+
+main {
+	font-family: var(--fn);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title {
+	font-weight: var(--fn-ttl-w);
+	font-size: 4rem;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cnt {
+	display: flex;
+	width: 22rem;
+}
+
+.cnt.left,
+.cnt.right {
+	gap: 12px;
+	flex: auto;
+}
+
+.ind {
+	font-size: 24px;
+	font-weight: var(--fn-pr-w);
+}
+
+select {
+	font-family: var(--fn);
+	font-weight: var(--fn-pr-w);
+	font-size: 1rem;
+	width: 3rem;
+	border-radius: 4px;
+}
+
+select:hover {
+	background-color: var(--sec-clr);
+}
+
+.fill {
+	width: 2rem;
+	height: 2rem;
+	border: 2px solid var(--pri-clr);
+	border-radius: 4px;
+}
+
+.fill.clr-1 {
+	background-color: var(--fill-clr-1);
+}
+
+.fill.clr-2 {
+	background-color: var(--fill-clr-2);
 }
