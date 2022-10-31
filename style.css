@@ -1,0 +1,24 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: auto;
+}
+
+:root {
+	/* fonts specs */
+	--fn: "Chakra Petch", sans-serif;
+	--fn-ttl-w: 600;
+	--fn-pr: 500;
+	/* Colors specs*/
+	--bg-clr: #f4f7f5;
+	--pri-clr: #08090a;
+	--sec-clr: #e4e4e4;
+	--fill-clr-1: #000000;
+	--fill-clr-2: #ffffff;
+}
+
+*::before,
+*::after {
+	box-sizing: border-box;
+}
