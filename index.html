@@ -12,6 +12,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="style.css" />
+		<script defer src="main.js"></script>
 	</head>
 	<body>
 		<main>
@@ -20,15 +21,18 @@
 			</div>
 			<div class="cnt">
 				<div class="cnt left">
-					<label for="options" class="ind">Rows: </label>
-					<select name="options" id="options">
-						<option value="8">8</option>
-						<option value="16">16</option>
-						<option value="24">24</option>
-						<option value="32">32</option>
-						<option value="40">40</option>
-						<option value="48">48</option>
-					</select>
+					<p class="ind">Rows:</p>
+					<div class="dropdown">
+						<input class="text-box" type="text" placeholder="select" readonly />
+						<div class="options">
+							<div onclick="show('8')">8</div>
+							<div onclick="show('16')">16</div>
+							<div onclick="show('24')">24</div>
+							<div onclick="show('32')">32</div>
+							<div onclick="show('40')">40</div>
+							<div onclick="show('48')">48</div>
+						</div>
+					</div>
 				</div>
 				<div class="cnt right">
 					<p class="ind">Colors:</p>
