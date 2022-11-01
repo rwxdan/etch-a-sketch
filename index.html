@@ -11,6 +11,10 @@
 			href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 		<link rel="stylesheet" href="style.css" />
 		<script defer src="main.js"></script>
 	</head>
@@ -19,11 +23,12 @@
 			<div>
 				<p class="title">Etch a Sketch</p>
 			</div>
+			<div class="grid-container"></div>
 			<div class="cnt">
 				<div class="cnt left">
 					<p class="ind">ROWS:</p>
 					<div class="dropdown">
-						<input class="text-box" type="text" placeholder="select" readonly />
+						<input class="rows" type="number" name="quantity" readonly />
 						<div class="options">
 							<div onclick="show('8')">8</div>
 							<div onclick="show('16')">16</div>
@@ -42,6 +47,14 @@
 				<div>
 					<button onclick="reset()" class="ind btn">RESET</button>
 				</div>
+			</div>
+			<div>
+				<p class="author">
+					Created by
+					<a target="_blank" href="https://github.com/rwxdan/"
+						><i class="fa fa-github"></i> Daniel Castro</a
+					>
+				</p>
 			</div>
 		</main>
 	</body>

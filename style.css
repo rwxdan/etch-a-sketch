@@ -46,6 +46,7 @@ main {
 .cnt {
 	display: flex;
 	width: 34.5rem;
+	height: 3rem;
 }
 
 .ind {
@@ -129,4 +130,34 @@ main {
 	border-radius: 4px;
 	padding: 0 0.5rem;
 	height: 2rem;
+	cursor: pointer;
+}
+
+.square {
+	background-color: var(--fill-clr-2);
+	border: 1px solid var(--sec-clr);
+}
+
+.colorized {
+	background-color: var(--fill-clr-1);
+	border: 1px solid var(--fill-clr-1);
+}
+
+.grid-container {
+	height: 575px;
+	width: 575px;
+	border: 4px solid var(--pri-clr);
+	border-radius: 8px;
+	display: grid;
+	grid-template-columns: repeat(16, 2fr);
+	grid-template-rows: repeat(16, 2fr);
+}
+
+.author {
+	font-size: 24px;
+}
+
+.author a:link,
+.author a:visited {
+	color: var(--pri-clr);
 }
