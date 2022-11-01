@@ -139,6 +139,7 @@ main {
 }
 
 .colorized {
+	transition-duration: 400ms;
 	background-color: var(--fill-clr-1);
 	border: 1px solid var(--fill-clr-1);
 }
