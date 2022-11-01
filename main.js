@@ -8,3 +8,7 @@ const options = document.querySelector(".options");
 dropdown.onclick = () => {
 	options.classList.toggle("active");
 };
+
+const reset = () => {
+	textBox.value = null;
+};
