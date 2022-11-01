@@ -10,5 +10,8 @@ dropdown.onclick = () => {
 };
 
 const reset = () => {
-	textBox.value = null;
+	if (textBox.value) {
+		textBox.value = null;
+	}
+	return;
 };
